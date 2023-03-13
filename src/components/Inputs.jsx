@@ -22,7 +22,7 @@ function Inputs({setQuery, units, setUnits}) {
     }
     return (
          <div className="flex flex-row justify-center my-6">
-            <div className="flex flex-row w-3/4 items-center justify-center space-x-3">
+            <div className="flex flex-row items-center justify-center space-x-3">
                 <label class="relative block">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
                         <UilSearch 
@@ -45,7 +45,7 @@ function Inputs({setQuery, units, setUnits}) {
                     onClick={handleLocationClick} 
                 />
             </div>
-        <div className="flex flex-row w-1/4 items-center justify-center">
+        <div className="flex flex-row items-center justify-center pl-5">
             <button 
                 name="metric" 
                 className="text-white text-xl font-light transition ease-out hover:scale-110"

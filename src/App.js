@@ -23,15 +23,15 @@ function App() {
     }, [query, units]);
 
     const formatBackground = () => {
-        if(!weather) return 'from-gray-300 to-blue-200'
+        if(!weather) return 'from-gray-300 to-sky-300'
         const threshold = units === 'metric' ? 20 : 60 
-        if (weather.temp <= threshold) return 'from-gray-300 to-blue-200'
+        if (weather.temp <= threshold) return 'from-gray-300 to-sky-300'
 
-        return 'from-gray-300 to-yellow-200'
+        return 'from-gray-300 to-amber-400'
     }
 
     return (
-        <div className={`mx-auto max-w-screen-md mt-4 rounded-xl py-5 px-32 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}>
+        <div className={`mx-auto md:h-fulll sm:flex-auto py-5 px-2 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}>
             <TopButtons setQuery={setQuery} />
             <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
             {weather && (
