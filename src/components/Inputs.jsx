@@ -23,8 +23,8 @@ function Inputs({setQuery, units, setUnits}) {
     return (
          <div className="flex flex-row justify-center my-6">
             <div className="flex flex-row items-center justify-center space-x-3">
-                <label class="relative block">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <label className="relative block">
+                    <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                         <UilSearch 
                             size={20} 
                             className="text-gray-200 cursor-pointer transition ease-out hover:scale-125"
@@ -34,8 +34,8 @@ function Inputs({setQuery, units, setUnits}) {
                     <input
                         value={city}
                         onChange={(e) => setCity(e.currentTarget.value)}
-                        class="leading-4 font-light w-full rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none capitalize placeholder:lowercase" 
-                        placeholder="Search for city" 
+                        className="leading-3 font-light w-full rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none capitalize placeholder:lowercase" 
+                        placeholder="..." 
                         type="text" 
                         name="search"/>
                 </label>

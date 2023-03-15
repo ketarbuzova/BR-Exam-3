@@ -1,26 +1,26 @@
 import React from 'react'
 
-function TopButtons(setQuery) {
+function TopButtons({ setQuery }) {
     const cities = [
         {
             id: 1,
-            title: 'Kyiv'
+            title: 'London'
         },
         {
-            id: 1,
-            title: 'Kharkiv'
+            id: 2,
+            title: 'Paris'
         },
         {
-            id: 1,
-            title: 'Dnipro'
+            id: 3,
+            title: 'Berlin'
         },
         {
-            id: 1,
-            title: 'Odesa'
+            id: 4,
+            title: 'Stambul'
         },
         {
-            id: 1,
-            title: 'Lviv'
+            id: 5,
+            title: 'New York'
         },
     ]
 
